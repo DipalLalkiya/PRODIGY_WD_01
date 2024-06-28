@@ -1,0 +1,48 @@
+/* src/Navbar.css */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0;
+
+    transition: background-color 0.3s, color 0.3s;
+    z-index: 1000;
+    margin-left: -790px;
+  }
+  
+  .navbar.scrolled {
+    background-color: #222;
+    color: #ddd;
+  }
+  
+  .navbar-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+  }
+  
+  .navbar-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+  }
+  
+  .navbar-item a:hover {
+    color: #f0c674;
+  }
+  
+  .navbar.scrolled .navbar-item a {
+    color: #ddd;
+  }
+  
+  .navbar.scrolled .navbar-item a:hover {
+    color: #f0c674;
+  }
+  
